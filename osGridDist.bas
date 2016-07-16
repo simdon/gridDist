@@ -2,6 +2,8 @@ Function gridDist(east1 As Long, north1 As Long, east2 As Long, north2 As Long)
 ' SD 2016
 ' Uses Pythagoras' Theorem to calculate the straight line distance between two
 ' pairs of Eastings and Northings on the OS National Grid.
+' Assumes 12 figure reference (6 figure Easting and 6 figure Northing) i.e. accuracy
+' of 1m. Assumes first digit is national grid line reference, not two-letter reference.
 
 'Dimension required variables
 Dim dEast As Long, dNorth As Long, dLine As Double
