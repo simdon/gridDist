@@ -14,9 +14,9 @@ dEast = east2 - east1
 dNorth = north2 - north1
 
 'Use Pythagoras' Theorem to calculate distance (a^2)=(b^2)+(c^2) therefore
-' a=sqrt(a^2)+(c^2)
+' a=sqrt((b^2)+(c^2)) 
 ' Divide the result by 1000 to convert from metres to kilometres.
-dLine = Sqr((dEast ^ 2) + (dNorth ^ 2)) / 1000
+dLine = Sqrt((dEast ^ 2) + (dNorth ^ 2)) / 1000
 
 'Pass the calculated distance to the output.
 gridDist = dLine
